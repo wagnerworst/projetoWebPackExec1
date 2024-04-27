@@ -1,0 +1,112 @@
+*{
+    font-weight: 900;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    color: #343638;
+    box-sizing: border-box;
+}
+@media (max-width: 640px){
+    *{
+        font-size: 15px;
+    }
+}
+body{
+    background-color: #8FBCB3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+main{
+    height: 90vh;
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3vw;
+}
+@media (max-width: 640px){
+    main{
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+    }
+}
+.card{
+    padding: 1%;
+    height: 30vh;
+    width: 41vw;
+    gap: 1%;
+    box-sizing: border-box;
+    display: flex;
+    background-color: #DFE6ED;
+    justify-content: space-around;
+}
+@media (max-width: 640px){
+    .card{
+        height: 22vh;
+        width: 94vw;
+        padding: 3%;
+        justify-content: space-between;
+    }
+}
+.cardUi{
+    padding: 1%;
+    width: 25vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #DFE6ED;
+}
+@media (max-width: 640px){
+    .cardUi{
+        width: 45vw;
+    }
+}
+.cardUi >* {
+    height: 7vh;
+}
+@media (max-width: 640px){
+    .cardUi >*{
+        height: 5vh;
+    }
+}
+.cardResultado{
+    width: 25vw;
+    box-sizing: border-box;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    background-color: #C3CFD9;
+}
+@media (max-width: 640px){
+    .cardResultado{
+        width: 45vw;
+    }
+}
+#textoResultado{
+    height: 15%;
+}
+.resultadoResolvidoText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    font-size: 120%;
+}
+.resultadoResolvidoNumber{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    font-size: 500%;
+    font-weight: 100;
+}
+button{
+    background-color: #788895;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
